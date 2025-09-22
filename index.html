@@ -1,55 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-        ul li:hover{
-           color: aqua; 
-        }
-        .btn1{
-            background-color: white;
-            color: red;
-            font-size: 24px;
-            padding: 6px 8px;
-            border-radius: 50%;
-            border: 2px solid white;
-            transition: all .2s ease-in-out;
-        }
-        .btn1:hover{
-           background-color: transparent;
-           color: white;
-           transform: scale(1.03);
-        }
+      ul li:hover {
+        color: aqua;
+      }
+      .btn1 {
+        background-color: white;
+        color: red;
+        font-size: 24px;
+        padding: 6px 8px;
+        border-radius: 50%;
+        border: 2px solid white;
+        transition: all 0.2s ease-in-out;
+      }
+      .btn1:hover {
+        background-color: transparent;
+        color: white;
+        transform: scale(1.03);
+      }
+      .card{
+        text-align: center;
+
+      }
+      .card i{
+        font-size: 40px;
+        color: burlywood;
+      }
+      .card h2{
+        font-size: 32px;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+      }
+      .card p{
+        color: rgb(255, 255, 255);
+      }
     </style>
-</head>
-<body>
-    <nav class="bg-cyan-600 pt-4 text-white flex items-center justify-around fixed w-full">
-        <h1 class="text-3xl font-bold">Nargis Akter</h1>
-        <ul class="flex gap-16 text-xl font-medium">
-            <li><a href="">Home</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Gallery</a></li>
-        </ul>
+  </head>
+  <body>
+    <!-- nav section  -->
+    <nav
+      class="bg-cyan-600 pt-4 text-white flex items-center justify-around fixed w-full"
+    >
+      <h1 class="text-3xl font-bold">Nargis Akter</h1>
+      <ul class="flex gap-16 text-xl font-medium">
+        <li><a href="">Home</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Testimonials</a></li>
+        <li><a href="">Gallery</a></li>
+      </ul>
     </nav>
     <!-- header Section  -->
-    <div class=" bg-slate-500 pt-40 px-20 flex items-center justify-around">
-      <div class="w-1/2 ">
-          <h1 class="text-3xl font-bold text-white">Hi. <span class="text-yellow-300">I'm Nargis Akter</span>. I design <br>
-             awesome websites.</h1>
-          <p class="text-slate-50 font-medium my-5 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id ratione, eligendi beatae quod, modi alias pariatur, repellat delectus officiis minus! Nihil asperiores sequi et molestias quibusdam nostrum harum laudantium?</p>
-          <div class="flex gap-4 items-center">
-        <button class="btn1"><i class="fa-solid fa-circle-play"></i></button>
-        <p class="text-white underline">Watch Presention Video</p>
+    <div class="bg-slate-500 pt-40 px-20 flex items-center justify-around">
+      <div class="w-1/2">
+        <h1 class="text-3xl font-bold text-white">
+          Hi. <span class="text-yellow-300">I'm Nargis Akter</span>. I design
+          <br />
+          awesome websites.
+        </h1>
+        <p class="text-slate-50 font-medium my-5 text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id
+          ratione, eligendi beatae quod, modi alias pariatur, repellat delectus
+          officiis minus! Nihil asperiores sequi et molestias quibusdam nostrum
+          harum laudantium?
+        </p>
+        <div class="flex gap-4 items-center">
+          <button class="btn1"><i class="fa-solid fa-circle-play"></i></button>
+          <p class="text-white underline">Watch Presention Video</p>
+        </div>
       </div>
-      </div>
-      <img class="w-96" src="./women_-removebg-preview.png" alt="">
+      <img class="w-96" src="./women_-removebg-preview.png" alt="" />
     </div>
-</body>
+
+    <!-- services section  -->
+    <div class="bg-slate-700 flex flex-col gap-2 items-center py-16 border">
+      <h1 class="text-3xl font-bold text-white">What I do the best</h1>
+      <p class="text-slate-200">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, explicabo!
+      </p>
+      <div class="flex gap-15 max-w-6xl mt-10">
+        <div class="card space-y-2">
+          <i class="fa-solid fa-medal"></i>
+          <h2>Web Design</h2>
+          <p>
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, dolores atque tenetur expedita quod sapiente accusamus. Labore minus nesciunt consectetur!
+          </p>
+        </div>
+        <div class="card space-y-2">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h2>Web Development</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, dolores atque tenetur expedita quod sapiente accusamus. Labore minus nesciunt consectetur!
+          </p>
+        </div>
+        <div class="card space-y-2">
+          <i class="fa-solid fa-umbrella"></i>
+          <h2>UX/UI Design</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, dolores atque tenetur expedita quod sapiente accusamus. Labore minus nesciunt consectetur!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
